@@ -1,6 +1,6 @@
 package com.k_int.kbplus
 
-class Platform {
+class Platform extends KBComponent {
 
   String impId
   String name
