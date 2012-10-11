@@ -1,9 +1,8 @@
 package com.k_int.kbplus
 
-class Org {
+class Org extends KBComponent{
 
   String name
-  String impId
   String address
   String ipRange
   String sector
@@ -29,7 +28,6 @@ class Org {
   static mapping = {
          id column:'org_id'
     version column:'org_version'
-      impId column:'org_imp_id', index:'org_imp_id_idx'
        name column:'org_name', index:'org_name_idx'
     address column:'org_address'
     ipRange column:'org_ip_range'

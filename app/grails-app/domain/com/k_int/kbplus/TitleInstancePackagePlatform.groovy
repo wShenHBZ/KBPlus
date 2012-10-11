@@ -1,6 +1,6 @@
 package com.k_int.kbplus
 
-class TitleInstancePackagePlatform {
+class TitleInstancePackagePlatform extends KBComponent {
 
   Date startDate
   String rectype="so"
@@ -12,7 +12,6 @@ class TitleInstancePackagePlatform {
   String embargo
   String coverageDepth
   String coverageNote
-  String impId
   RefdataValue status
   RefdataValue option
   String hostPlatformURL
@@ -47,7 +46,6 @@ class TitleInstancePackagePlatform {
           embargo column:'tipp_embargo'
     coverageDepth column:'tipp_coverage_depth'
      coverageNote column:'tipp_coverage_note',type: 'text'
-            impId column:'tipp_imp_id', index: 'tipp_imp_id_idx'
            status column:'tipp_status_rv_fk'
            option column:'tipp_option_rv_fk'
   hostPlatformURL column:'tipp_host_platform_url'
