@@ -2,7 +2,7 @@ package com.k_int.kbplus
 
 class Platform extends KBComponent {
 
-  String impId
+  // String impId
   String name
   String normname
   String primaryUrl
@@ -17,9 +17,9 @@ class Platform extends KBComponent {
   static hasMany = [tipps: TitleInstancePackagePlatform]
 
   static mapping = {
-                id column:'plat_id'
-           version column:'plat_version'
-             impId column:'plat_imp_id', index:'plat_imp_id_idx'
+  //              id column:'plat_id'
+  //         version column:'plat_version'
+  //           impId column:'plat_imp_id', index:'plat_imp_id_idx'
               name column:'plat_name'
           normname column:'plat_normalised_name'
         provenance column:'plat_data_provenance'
@@ -30,7 +30,7 @@ class Platform extends KBComponent {
   }
 
   static constraints = {
-    impId(nullable:true, blank:false)
+  //  impId(nullable:true, blank:false)
     primaryUrl(nullable:true, blank:false)
     provenance(nullable:true, blank:false)
     type(nullable:true, blank:false)

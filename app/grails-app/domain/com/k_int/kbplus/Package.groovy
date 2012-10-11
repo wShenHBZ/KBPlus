@@ -1,10 +1,10 @@
 package com.k_int.kbplus
 
-class Package {
+class Package extends KBComponent {
 
   String identifier
   String name
-  String impId
+  // String impId
   RefdataValue packageType
   RefdataValue packageStatus
   RefdataValue packageListStatus
@@ -24,11 +24,11 @@ class Package {
 
 
   static mapping = {
-                   id column:'pkg_id'
-              version column:'pkg_version'
+  //                 id column:'pkg_id'
+  //            version column:'pkg_version'
            identifier column:'pkg_identifier'
                  name column:'pkg_name'
-                impId column:'pkg_imp_id', index:'pkg_imp_id_idx'
+  //               impId column:'pkg_imp_id', index:'pkg_imp_id_idx'
           packageType column:'pkg_type_rv_fk'
         packageStatus column:'pkg_status_rv_fk'
     packageListStatus column:'pkg_list_status_rv_fk'
