@@ -15,13 +15,15 @@ grant all on GoKB.* to 'k-int'@'localhost.localdomain';
 grant all on GoKB.* to 'k-int'@'%';
 
 
-create database KBPlus default character set utf8 default collate utf8_bin;
-grant all on KBPlus.* to 'k-int'@'localhost';
-grant all on KBPlus.* to 'k-int'@'localhost.localdomain';
-grant all on KBPlus.* to 'k-int'@'%';
 
+-- Additional MySQL Server configuration --
+
+In MySQL Console
 
 show variables like '%character%';  
+
+will show character set settings.
+
 
 N.B. On linux, you may need to edit your /etc/mysql/my.cnf file and add the following to [mysqld] (Particularly if the above show, returns an character_set_server which is not utf8)
 
@@ -29,3 +31,6 @@ collation_server=utf8_unicode_ci
 character_set_server=utf8
 
 
+To Generate DDL for the app
+
+grails schema-export sql/ddl.sql
