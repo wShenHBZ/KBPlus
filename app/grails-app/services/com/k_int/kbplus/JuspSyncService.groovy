@@ -26,12 +26,12 @@ class JuspSyncService {
   static int completedCount=0
   static int newFactCount=0
 
-  def running = false;
+  static boolean running = false;
 
   def synchronized doSync() {
     log.debug("JuspSyncService::doSync");
 
-    if ( running ) 
+    if ( running == true ) 
       return
 
     running = true
