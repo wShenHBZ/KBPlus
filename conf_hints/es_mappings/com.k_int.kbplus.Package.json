@@ -1,5 +1,5 @@
 {
-  "com.k_int.kbplus.Package": {
+ 
     "properties": {
       "name": {
         "type": "string",
@@ -42,5 +42,5 @@
         "index": "not_analyzed"
       }
     }
-  }
+  
 }
