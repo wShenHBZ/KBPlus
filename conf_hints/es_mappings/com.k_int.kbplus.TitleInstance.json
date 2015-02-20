@@ -1,9 +1,9 @@
 {
-  "com.k_int.kbplus.TitleInstance": {
+  
     "properties": {
       "title": {
         "type": "string"
       }
     }
-  }
+  
 }
